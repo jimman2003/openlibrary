@@ -75,7 +75,7 @@ endif
 
 test-py:
 	pytest . --ignore=tests/integration --ignore=infogami --ignore=vendor --ignore=node_modules
-
+	./scripts/run_doctests.sh
 test-i18n:
   # Valid locale codes should be added as arguments to validate
 	$(PYTHON) ./scripts/i18n-messages validate de es fr hr ja zh
